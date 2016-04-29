@@ -16,7 +16,7 @@ Use the GPG signature to validate it first!**
 
 ## The problem we try to solve
 
-The frenchies team builds test/dev tools using one-off AWS
+The storage team builds test/dev tools using one-off AWS
 instances. Some of these tools become indispensable, yet, don't
 warrant being monitored and managed by ops.
 
@@ -27,7 +27,7 @@ being borked for days.
 
 ## The solution
 
-This repo contains public keys for the frenchies core crew.
+This repo contains public keys for the storage team crew.
 
 If toolmakers upload their fellow devs' pubkeys to a long-lived
 awsbox, anybody can reboot or troubleshoot a downed machine when its
@@ -37,7 +37,7 @@ creator is out on vacation.
 
 ## How to use 
 
-Only use the pubkeys verified with the frenchies public key.
+Only use the pubkeys verified with the storage team public key.
 
     $ gpg --verify rhubscher.sig rhubscher.pub
 
@@ -45,16 +45,16 @@ Only use the pubkeys verified with the frenchies public key.
 ## When to use
 
 If you create a tool on an awsbox that someone might need to maintain
-while you're away, then you can upload the frenchies-pubkeys to that
+while you're away, then you can upload the storage-team-pubkeys to that
 awsbox and relax.
 
 ## How to update with new keys
 
 File a Pull-Request to this repository and send an email with the
-sha384sum of your key at frenchies@mozilla.com
+sha384sum of your key at storage-team@mozilla.com
 
 Someone will validate the sha384sum and sign your public key with the
-frenchies GPG key before merging your pull-request.
+storage-team GPG key before merging your pull-request.
 
 We trust github and git because you can't modify the keys without
 resigning them with the right GPG key.
@@ -62,7 +62,7 @@ resigning them with the right GPG key.
 
 ## How to sign the key
 
-You first need the frenchies secret key and password.
+You first need the storage team secret key and password.
 
 Then you can run:
 
