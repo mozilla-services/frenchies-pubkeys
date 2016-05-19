@@ -48,6 +48,9 @@ If you create a tool on an awsbox that someone might need to maintain
 while you're away, then you can upload the storage-team-pubkeys to that
 awsbox and relax.
 
+    $ for file in $(ls *.sig); do gpg --verify ${file} ${file/%.sig/.pub}; done   
+    $ cat *.pub > ~/.ssh/authorized_keys
+
 ## How to update with new keys
 
 File a Pull-Request to this repository and send an email with the
