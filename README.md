@@ -69,4 +69,4 @@ You first need the storage team secret key and password.
 
 Then you can run:
 
-    $ gpg --default-key 2EFAB48B  -o rhubscher.sig --detach-sign rhubscher.pub
+    $ gpg --default-key 0x2EFAB48B  -o rhubscher.sig --detach-sign rhubscher.pub
